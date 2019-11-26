@@ -1,5 +1,4 @@
 import React from 'react';
-import { BrowserRouter as Link } from 'react-router-dom';
 
 import './home.css';
 
@@ -8,7 +7,7 @@ const favoriteThings = [
   'djing',
   'saxophone',
   'plants',
-  'Adrienne\'s Happy Place',
+  '',
   'dancing',
   'thrifting',
   'light',
@@ -29,14 +28,18 @@ const rainbow = [
 
 function Home() {
   return (
-    <div className='flex-wrap'>
+    <div className='home flex-wrap'>
       {favoriteThings.map((thing, i) => {
         return (
           <div
-            className='x3 rainbow'
+            className='x3'
             style={{ backgroundColor: rainbow[i] }}
           >
-            <a href={'/' + thing}>{thing}</a>
+            {
+            i === 4 ?
+              <div>Adrienne's Happy Place</div> :
+              <a href={'/' + thing}>{thing}</a>
+            }
           </div>
         );
       })}

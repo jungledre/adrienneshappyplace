@@ -1,3 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.rainbow-container {
+  height: 100vh;
+  background-color: aquamarine;
+  animation: colorRotate 10s linear infinite;
+}
 
 .flex-wrap {
   display: flex;
@@ -17,6 +27,15 @@
   overflow: hidden;
 }
 
-.fill-width {
-  width: 100%;
+nav {
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+}
+
+nav > a {
+  display: block;
+  justify-content: space-between;
+  font-size: 5em;
+  padding-left: 8px
 }

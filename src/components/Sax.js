@@ -1,10 +1,8 @@
 import React from 'react';
 
-const stuff = ['pilea', 'pothos', 'monstera', 'zz'];
-
-function Plants() {
+function Sax() {
   return (
-    <div>
+    <div className='rainbow-container'>
       Playing saxophone is one of the ways I can most fluently express myself
       through music!
       <ul>
@@ -12,6 +10,7 @@ function Plants() {
           I'm on a record!!
           <a href='https://halfshellrecords.bandcamp.com/album/softly-wait'>
             <img
+              alt='album cover with beautiful rainbow'
               src='https://f4.bcbits.com/img/a2733115006_10.jpg'
               width='100'
             ></img>
@@ -39,4 +38,4 @@ function Plants() {
   );
 }
 
-export default Plants;
+export default Sax;
