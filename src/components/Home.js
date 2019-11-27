@@ -7,7 +7,7 @@ const favoriteThings = [
   'djing',
   'saxophone',
   'plants',
-  '',
+  'happyplace',
   'dancing',
   'thrifting',
   'light',
@@ -28,7 +28,7 @@ const rainbow = [
 
 function Home() {
   return (
-    <div className='home flex-wrap'>
+    <div className='home rainbow flex-wrap'>
       {favoriteThings.map((thing, i) => {
         return (
           <div
@@ -36,7 +36,7 @@ function Home() {
             style={{ backgroundColor: rainbow[i] }}
           >
             {
-            i === 4 ?
+            thing === 'happyplace' ?
               <div>Adrienne's Happy Place</div> :
               <a href={'/' + thing}>{thing}</a>
             }
