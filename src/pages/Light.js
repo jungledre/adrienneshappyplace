@@ -22,23 +22,18 @@ const info = [
         good stuff
       </span>,
       'Moire transparencies',
-      'Glass candy dishes',
-      'Color wheels',
-      'Strobe wheels',
-      'Ripple wheels',
-      'Dichroic Cube Prism',
-      'Anything that might create fun interactions with light :-)'
+      'Color, strobe, and ripple wheels'
     ]
   },
-  {
-    title: 'Research',
-    content: [
-      <a href='https://www.exploratorium.edu/snacks/on-the-fringe'>
-        {' '}
-        interference patterns
-      </a>
-    ]
-  },
+  // {
+  //   title: 'Research',
+  //   content: [
+  //     <a href='https://www.exploratorium.edu/snacks/on-the-fringe'>
+  //       {' '}
+  //       interference patterns
+  //     </a>
+  //   ]
+  // },
   {
     title: 'Artists',
     content: [

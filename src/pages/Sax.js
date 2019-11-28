@@ -24,7 +24,7 @@ const content = [
   {
     title: 'Groups I\'ve performed with',
     content: [
-      'Sundae Crush, VamoLá, The Dahlias, Rise Up! Action Band, Pleasures, Tres Leches, Filthy FemCorps'
+      'Sundae Crush, Rise Up! Action Band, Pleasures, Tres Leches, Filthy FemCorps'
     ]
   }
 ];
