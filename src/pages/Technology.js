@@ -2,7 +2,7 @@ import React from 'react';
 
 function Technology() {
   return (
-    <div className='rainbow-container'>
+    <div className='page-container'>
       <h1>Technology</h1>
       {'I love web development!'}
       <ul>

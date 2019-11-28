@@ -21,14 +21,14 @@
   transform-origin: center center;
   background: repeating-linear-gradient(45deg, transparent 0px, transparent 1px, limegreen 3px, hotpink 4px);
   position: relative;
-  height: 1000vmax;
-  width: 1000vmax;
+  height: 300vmax;
+  width: 300vmax;
   mix-blend-mode: luminosity;
-  top: -500vmax;
-  left: -500vmax;
+  top: -100vmax;
+  left: -100vmax;
   right: 0;
   bottom: 0;
-  zoom: 400%;
+  zoom: 200%;
 }
 
 @keyframes spin {

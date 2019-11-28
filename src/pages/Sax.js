@@ -39,7 +39,7 @@ const content = [
 
 function Sax() {
   return (
-    <div className='rainbow-container'>
+    <div className='page-container'>
       <h1>Saxophone</h1>
       <p>
         Playing saxophone is the way I can most fluently express myself through

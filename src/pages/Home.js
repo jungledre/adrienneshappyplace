@@ -10,8 +10,8 @@ const favoriteThings = [
   'happyplace',
   'moires',
   'technology',
-  'dancing',
   'plants',
+  'dancing',
 ];
 
 const rainbow = [

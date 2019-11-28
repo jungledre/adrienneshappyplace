@@ -2,7 +2,7 @@ import React from 'react';
 
 function DJing() {
   return (
-    <div className='rainbow-container'>
+    <div className='page-container'>
       <h1>DJing</h1>
       <p>
         After visiting Brazil in 2018, I picked up DJing in order to share the
