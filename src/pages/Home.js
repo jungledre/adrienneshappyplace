@@ -3,15 +3,15 @@ import React from 'react';
 import './home.css';
 
 const favoriteThings = [
-  'moires',
   'djing',
-  'saxophone',
-  'plants',
-  'happyplace',
-  'dancing',
-  'thrifting',
   'light',
-  'technology'
+  'thrifting',
+  'saxophone',
+  'happyplace',
+  'moires',
+  'technology',
+  'dancing',
+  'plants',
 ];
 
 const rainbow = [
@@ -31,16 +31,13 @@ function Home() {
     <div className='home rainbow flex-wrap'>
       {favoriteThings.map((thing, i) => {
         return (
-          <div
-            className='x3'
+          <a
+            className='home-link x3'
             style={{ backgroundColor: rainbow[i] }}
+            href={'/' + thing}
           >
-            {
-            thing === 'happyplace' ?
-              <div>Adrienne's Happy Place</div> :
-              <a href={'/' + thing}>{thing}</a>
-            }
-          </div>
+            {thing === 'happyplace' ? 'Adrienne\'s Happy Place' : thing.toUpperCase()}
+          </a>
         );
       })}
     </div>

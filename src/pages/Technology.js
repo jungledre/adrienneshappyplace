@@ -3,6 +3,7 @@ import React from 'react';
 function Technology() {
   return (
     <div className='rainbow-container'>
+      <h1>Technology</h1>
       {'I love web development!'}
       <ul>
         <li>
@@ -19,7 +20,6 @@ function Technology() {
           </a>
         </li>
       </ul>
-      <a href='/'>Click here to go back home</a>
     </div>
   );
 }

@@ -1,15 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Link, Route } from 'react-router-dom';
 import './App.css';
-import Home from './components/Home';
-import Dancing from './components/Dancing';
-import DJing from './components/DJing';
-import Light from './components/Light';
-import Moires from './components/Moires';
-import Plants from './components/Plants';
-import Sax from './components/Sax';
-import Thrifting from './components/Thrifting';
-import Technology from './components/Technology';
+import Home from './pages/Home';
+import Dancing from './pages/Dancing';
+import DJing from './pages/DJing';
+import Light from './pages/Light';
+import Moires from './pages/Moires';
+import Plants from './pages/Plants';
+import Sax from './pages/Sax';
+import Thrifting from './pages/Thrifting';
+import Technology from './pages/Technology';
 
 function App() {
   return (
