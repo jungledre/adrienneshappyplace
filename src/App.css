@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-size: 1rem;
+  font-size: 1em;
   font-family: 'Vollkorn', 'Concert One', serif;
 }
 
@@ -21,10 +21,11 @@ h3 {
 }
 
 .page-container {
-  max-width: 700px;
-  padding-top: 15vh;
-  padding-left: 15vh;
-  padding-right: 15vh;
+  max-width: 800px;
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  animation: colorRotate 10s linear infinite;
 }
 
 .flex-wrap {

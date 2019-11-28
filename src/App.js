@@ -12,7 +12,6 @@ import Thrifting from './pages/Thrifting';
 import Technology from './pages/Technology';
 
 function App() {
-
   const rainbow = [
     'Thistle',
     'Lavender Purple',
@@ -48,7 +47,7 @@ function App() {
           <Route path='/saxophone'>
             <Sax />
           </Route>
-          <Route path='/technology'>
+          <Route path='/coding'>
             <Technology />
           </Route>
           <Route path='/thrifting'>

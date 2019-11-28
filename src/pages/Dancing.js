@@ -10,12 +10,7 @@ function Dancing() {
       <Content content={[{
         title: 'My Favorite Styles',
         content: [
-          'Forro',
-          'Clubbing',
-          'Improvisational Dance',
-          'Samba',
-          'Forro',
-          'Contra'
+          'Forro, Clubbing, Improvisational Dance, Samba, Forro, Contra'
         ]
       }]} />
     </div>

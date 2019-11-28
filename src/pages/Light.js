@@ -31,7 +31,7 @@ const info = [
     ]
   },
   {
-    title: 'research',
+    title: 'Research',
     content: [
       <a href='https://www.exploratorium.edu/snacks/on-the-fringe'>
         {' '}
@@ -40,9 +40,9 @@ const info = [
     ]
   },
   {
-    title: 'artists',
+    title: 'Artists',
     content: [
-      <a href='http://liquidlightshop.com'>Liquid Light Lab</a>,
+      <a href='https://liquidlightlab.com/'>Liquid Light Lab</a>,
       <a href='https://www.youtube.com/user/UniversalColors'>
         {'UniversalColors'}
       </a>
@@ -57,7 +57,7 @@ function Light() {
       <div className='light rainbow-inner'>
         <h1>Psychedelic Light Shows</h1>
         <p>
-          'I finally got my hands on a light projector! This has led to all kinds of experiments and research. Here I'll share my learnings.'
+          I finally got my hands on a light projector! This has led to all kinds of experiments and research. Here I'll share my learnings.'
         </p>
         <Content content={info} />
       </div>

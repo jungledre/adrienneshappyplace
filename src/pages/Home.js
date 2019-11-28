@@ -9,21 +9,21 @@ const favoriteThings = [
   'saxophone',
   'happyplace',
   'moires',
-  'technology',
+  'coding',
   'plants',
   'dancing',
 ];
 
 const rainbow = [
-  'HotPink',
-  'Tomato',
-  'Magenta',
-  'Coral',
-  'Gold',
-  'Chartreuse',
-  'Aquamarine',
-  'DeepSkyBlue',
-  'DarkViolet',
+  'C132AB',
+  'FF756D',
+  '5742B5',
+  '3CADCF',
+  '85DE77',
+  '97CC4B',
+  'F9FFCB',
+  'FFCC49',
+  'EF3E1F',
 ];
 
 function Home() {
@@ -33,7 +33,7 @@ function Home() {
         return (
           <a
             className='home-link x3'
-            style={{ backgroundColor: rainbow[i] }}
+            style={{ backgroundColor: '#' + rainbow[i] }}
             href={'/' + thing}
           >
             {thing === 'happyplace' ? 'Adrienne\'s Happy Place' : thing.toUpperCase()}

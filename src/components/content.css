@@ -1,8 +1,12 @@
 .content-container {
-  margin-top: 1rem;
-  margin-bottom: 3rem;
+  margin-top: 1em;
+  margin-bottom: 3em;
 }
 
 .content-container > ul {
   list-style-type: none;
+}
+
+.content-container > ul > li {
+  padding-bottom: 1em;;
 }
