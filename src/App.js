@@ -1,66 +1,87 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Link, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
+import Page from './components/Page';
 import Home from './pages/Home';
+import Hobbies from './pages/Hobbies';
+import Services from './pages/Services';
 import Dancing from './pages/Dancing';
 import DJing from './pages/DJing';
 import Light from './pages/Light';
-import Moires from './pages/Moires';
-import Plants from './pages/Plants';
+import Travel from './pages/Travel';
+import Nature from './pages/Nature';
 import Sax from './pages/Sax';
+import Waves from './components/Waves';
 import Thrifting from './pages/Thrifting';
 import Technology from './pages/Technology';
+import YouTube from './pages/YouTube';
 
 function App() {
-  const rainbow = [
-    'Thistle',
-    'Lavender Purple',
-    'Pastel Violet',
-    'Cotton Candy',
-    'Lumber'
-  ];
+
 
   return (
     <Router>
-      <div
-        className='rainbow-container'
-        style={{
-          backgroundColor: rainbow[Math.floor(Math.random() * rainbow.length)]
-        }}
-      >
-        <Switch>
-          <Route path='/dancing'>
+      <Switch>
+        <Route path='/services'>
+          <Page title={'Services'} noRainbow>
+            <Services />
+          </Page>
+        </Route>
+        <Route path='/hobbies'>
+          <Hobbies />
+        </Route>
+        <Route path='/dancing'>
+          <Page title={'Dancing'}>
             <Dancing />
-          </Route>
-          <Route path='/djing'>
+          </Page>
+        </Route>
+        <Route path='/djing'>
+          <Page title={'DJing'}>
             <DJing />
-          </Route>
-          <Route path='/light'>
+          </Page>
+        </Route>
+        <Route path='/light'>
+          <Page title={'Psychedelic Light Shows'}>
             <Light />
-          </Route>
-          <Route path='/moires'>
-            <Moires />
-          </Route>
-          <Route path='/plants'>
-            <Plants />
-          </Route>
-          <Route path='/saxophone'>
+          </Page>
+        </Route>
+        <Route path='/waves'>
+          <Waves />
+        </Route>
+        <Route path='/travel'>
+          <Page title={'Travel'}>
+            <Travel />
+          </Page>
+        </Route>
+        <Route path='/nature'>
+          <Page title={'Nature'}>
+            <Nature />
+          </Page>
+        </Route>
+        <Route path='/saxophone'>
+          <Page title={'Saxophone'}>
             <Sax />
-          </Route>
-          <Route path='/coding'>
+          </Page>
+        </Route>
+        <Route path='/coding'>
+          <Page title={'Coding'}>
             <Technology />
-          </Route>
-          <Route path='/thrifting'>
+          </Page>
+        </Route>
+        <Route path='/thrifting'>
+          <Page title={'Thrifting'}>
             <Thrifting />
-          </Route>
-          <Route path='/'>
-            <Home />
-          </Route>
-        </Switch>
-      </div>
-      <nav>
-        <Link to='/'>Home</Link>
-      </nav>
+          </Page>
+        </Route>
+        <Route path='/youtube'>
+          <Page title={'🐸'}>
+            <YouTube />
+          </Page>
+        </Route>
+        <Route path='/'>
+          <Home />
+        </Route>
+      </Switch>
     </Router>
   );
 }

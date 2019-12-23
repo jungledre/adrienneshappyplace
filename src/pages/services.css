@@ -1,0 +1,23 @@
+import React, { Fragment } from 'react';
+
+const services = [
+  'Live Performance Saxophone',
+  'Session Saxophone',
+]
+
+function Entrepreneurship() {
+  return (
+    <Fragment>
+      <p>
+        I offer a whole slew of services:
+        <ul>
+          {services.map((services, i) => {
+            return <li>+ {services[i]}</li>;
+          })}
+        </ul>
+      </p>
+    </Fragment>
+  );
+}
+
+export default Entrepreneurship;

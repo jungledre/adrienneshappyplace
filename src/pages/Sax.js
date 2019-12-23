@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Content from '../components/Content';
 
 const content = [
@@ -29,10 +29,9 @@ const content = [
   }
 ];
 
-function Sax() {
+function Sax({label}) {
   return (
-    <div className='page-container'>
-      <h1>Saxophone</h1>
+    <div label={label}>
       <p>
         Playing saxophone is the way I can most fluently express myself through
         music.

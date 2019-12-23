@@ -1,5 +1,5 @@
 body {
-  background-color: Thistle;
+  background-color: #F3FAF1;
   margin: 0;
   padding: 0;
   font-size: 1em;
@@ -7,6 +7,7 @@ body {
 }
 
 h1 {
+  margin-top: 0;
   font-weight: bold;
 }
 
@@ -14,24 +15,14 @@ h3 {
   font-weight: normal;
 }
 
-.rainbow-container {
-  margin: 0;
-  height: 100vh;
-  background-color: pink;
-  animation: colorRotate 10s linear infinite;
-}
-
-.page-container {
-  max-width: 750px;
-  padding-top: 10%;
-  padding-left: 10%;
-  padding-right: 10%;
-  animation: colorRotate 10s linear infinite;
-}
-
 .flex-wrap {
   display: flex;
   flex-wrap: wrap;
+}
+
+.half-screen {
+  height: 100vh;
+  width: 50vw;
 }
 
 .x3 {
@@ -45,24 +36,4 @@ h3 {
   height: 50vh;
   width: 50vw;
   overflow: hidden;
-}
-
-nav {
-  display: flex;
-  position: fixed;
-  bottom: 0px;
-}
-
-nav > a {
-  animation: colorRotate 10s linear infinite;
-  color: Aquamarine;
-  display: block;
-  justify-content: space-between;
-  font-size: 5em;
-  padding-left: 8px
-}
-
-nav > a:visited {
-  color: Aquamarine;
-  animation: colorRotate 10s linear infinite;
 }

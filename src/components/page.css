@@ -1,0 +1,33 @@
+.rainbow-container {
+  margin: 0;
+  padding: 0;
+  background-color: teal;
+  animation: colorRotate 10s linear infinite;
+  min-height: 100vh;
+}
+
+.page-container {
+  height: 100%;
+  max-width: 1000px;
+  padding: 10%;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  top: 0vh;
+}
+
+nav > a {
+  animation: colorRotate 10s linear infinite;
+  color: Aquamarine;
+  display: block;
+  justify-content: space-between;
+  font-size: 2em;
+  padding-left: 8px
+}
+
+nav > a:visited {
+  color: LimeGreen;
+  animation: colorRotate 10s linear infinite;
+}

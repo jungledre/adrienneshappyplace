@@ -8,6 +8,15 @@
   letter-spacing: .1em;
 }
 
+.home .half-screen {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: colorRotate 10s linear infinite;
+  min-height: 100vh;
+}
+
 .rainbow {
   color: hotpink;
   animation: colorRotate 20s linear infinite;
@@ -15,33 +24,44 @@
   vertical-align: center;
 }
 
+.home a {
+  text-decoration: none;
+  color: black;
+}
+
+.rainbow-link {
+  color: lavender;
+  animation: colorRotate 20s linear infinite;
+}
+
+a {
+ color: slateblue;
+}
+
 .home-link {
   color: lavender;
-  text-decoration: none;
-  animation: colorRotate 20s linear infinite;
 }
 
 .home-link:after {
   color: orange;
-  animation: colorRotate 20s linear infinite;
 }
 
 .home-link:link {
-  color: Chartreuse;
-  animation: colorRotate 20s linear infinite;
+  color: lavender;
 }
 
 .home-link:visited {
   color: lightBlue;
-  animation: colorRotate 20s linear infinite;
 }
 
 .home-link:hover {
   color: peachpuff;
-  animation: colorRotate 20s linear infinite;
 }
 
 .home-link:active {
   color: lilac;
-  animation: colorRotate 20s linear infinite;
+}
+
+.big-love {
+  font-size: 4em;
 }
