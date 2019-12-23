@@ -5,22 +5,30 @@ const content = [
   {
     title: 'DJ',
     content: [
-      'Electronica, synth pop, Brazilian, house, soul, funk DJ',
+      'I love spinning electronica, synth pop, Brazilian, house, soul, and funk.',
       "Past Events: Fremont Foundry, Jupiter Bar, Corvus, Linda's Tavern."
     ]
   },
   {
     title: 'VJ',
     content: [
-      'I can provide a full psychedelic light show including analog liquid light art.',
+      'As my newest service, I can provide a full psychedelic light show including analog liquid light art.',
       'Upcoming Events: Werewolf Vacation 1/18'
     ]
   },
   {
     title: 'Saxophone',
     content: [
-      'I perform and record professional improvised or arranged wind instrument parts. I can read music and learn very fast by ear.',
-      'Bands: Housekeys, Sundae Crush, Rise Up! Action Band, Pleasures, Tres Leches, Filthy FemCorps'
+      'I perform and record professional improvised or arranged wind instrument parts. I can read music and learn very fast by ear. I can also play a wide range of auxillary percussion.',
+      <p>
+        Bands:{' '}
+        <a href='https://housekeysband.bandcamp.com/Housekeys'>Housekeys</a>,{' '}
+        <a href='http://sundaecrush.com/'>Sundae Crush</a>,{' '}
+        <a href='http://riseupactionband.com/'>Rise Up! Action Band</a>,{' '}
+        <a href='https://halfshellrecords.bandcamp.com/album/softly-wait'>Pleasures</a>,{' '}
+        <a href='https://youtu.be/J-oxfReveQ8'>Tres Leches</a>,{' and '}
+        <a href='https://www.facebook.com/FilthyFemcorps/'>Filthy FemCorps</a>
+      </p>
     ]
   },
   {
@@ -28,8 +36,9 @@ const content = [
     content: [
       "With 6 years of professional web development experience, I'm open to offering my services for compelling website ideas.",
       <span>
-        Experience: <a href='https://account.godaddy.com/products'>GoDaddy.com</a>{' '}
-        — My Products + Account Settings Pages,{' '}
+        Experience:{' '}
+        <a href='https://account.godaddy.com/products'>GoDaddy.com</a> — My
+        Products + Account Settings Pages,{' '}
         <a href='https://porch.com'>Porch.com</a> — Front of Site + Account
         Settings Pages, Widget API,{' '}
         <a href='https://brenthaven.com/'>Brenthaven.com</a>

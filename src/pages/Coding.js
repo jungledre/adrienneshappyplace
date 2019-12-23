@@ -29,7 +29,7 @@ const content = [
   }
 ];
 
-function Technology() {
+function Coding() {
   return (
     <Fragment>
       <p>I discovered this field after meeting some startup developers through Couchsurfing.org who would work remotely while travelling the world.</p>
@@ -39,4 +39,4 @@ function Technology() {
   );
 }
 
-export default Technology;
+export default Coding;

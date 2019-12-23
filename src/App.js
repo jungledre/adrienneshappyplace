@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Page from './components/Page';
+import Adrienne from './pages/Adrienne';
 import Home from './pages/Home';
 import Hobbies from './pages/Hobbies';
 import Services from './pages/Services';
@@ -13,7 +14,7 @@ import Nature from './pages/Nature';
 import Sax from './pages/Sax';
 import Waves from './components/Waves';
 import Thrifting from './pages/Thrifting';
-import Technology from './pages/Technology';
+import Coding from './pages/Coding';
 import YouTube from './pages/YouTube';
 
 function App() {
@@ -25,6 +26,11 @@ function App() {
         <Route path='/services'>
           <Page title={'Services'} noRainbow>
             <Services />
+          </Page>
+        </Route>
+        <Route path='/🙋🏻'>
+          <Page title={'Hello friend!'}>
+            <Adrienne />
           </Page>
         </Route>
         <Route path='/hobbies'>
@@ -65,7 +71,7 @@ function App() {
         </Route>
         <Route path='/coding'>
           <Page title={'Coding'}>
-            <Technology />
+            <Coding />
           </Page>
         </Route>
         <Route path='/thrifting'>

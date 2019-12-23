@@ -16,6 +16,7 @@ nav {
   display: flex;
   position: fixed;
   top: 0vh;
+  padding: 30px;
 }
 
 nav > a {
@@ -24,7 +25,9 @@ nav > a {
   display: block;
   justify-content: space-between;
   font-size: 2em;
-  padding-left: 8px
+  padding-left: 8px;
+  text-decoration: none;
+  margin-right: .5em;
 }
 
 nav > a:visited {

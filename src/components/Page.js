@@ -14,6 +14,7 @@ function Page({ title, children, noRainbow }) {
   ];
 
   const randomColor = rainbowColors[Math.floor(Math.random() * rainbowColors.length)];
+  const randomNumber = Math.floor(Math.random() * 1000) - 20;
 
   return (
     <div
@@ -24,7 +25,9 @@ function Page({ title, children, noRainbow }) {
     >
       <YouTube
         videoUrl={
-          'https://www.youtube.com/embed/o-cHr7Ka-fE?controls=0&showinfo=0&rel=0&autoplay=1&mute=1&loop=1'
+          'https://www.youtube.com/embed/o-cHr7Ka-fE?t=' +
+          randomNumber +
+          '?controls=0&showinfo=0&rel=0&autoplay=1&mute=1&loop=1'
         }
       />
       <div className='page-container'>
@@ -32,7 +35,8 @@ function Page({ title, children, noRainbow }) {
         {children}
       </div>
       <nav>
-        <Link to='/'>Home</Link>
+        <Link to='/'>🏡</Link>
+        <Link to='/🙋🏻'>🙋🏻</Link>
       </nav>
     </div>
   );

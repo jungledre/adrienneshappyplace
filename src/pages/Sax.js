@@ -29,15 +29,15 @@ const content = [
   }
 ];
 
-function Sax({label}) {
+function Sax() {
   return (
-    <div label={label}>
+    <Fragment>
       <p>
         Playing saxophone is the way I can most fluently express myself through
         music.
       </p>
       <Content content={content} />
-    </div>
+    </Fragment>
   );
 }
 
