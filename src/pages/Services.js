@@ -39,7 +39,7 @@ const content = [
   {
     title: 'Networking',
     content: [
-      'I can connect you with some of the best musicians, music composers, sound designers, mixing and mastering engineers, videographers, graphic designers, illustrators, painters, woodworkers and jewelry makers in this city.'
+      'I can connect you with some of the best musicians, music composers, sound designers, mixing and mastering engineers, photographers, videographers, event producers, social media managers, graphic designers, illustrators, painters, woodworkers and jewelry makers in this city.'
     ]
   }
 ];
