@@ -1,10 +1,10 @@
 import React, { Fragment } from 'react';
-import Content from '../components/Content';
+import Content from '../../components/Content';
 
 const content = [
   {
     title: '2021 Chile??',
-    content: ['']
+    content: ['Some close friends recently moved down there. Looking forward to visiting them at some point in their new home.']
   },
   {
     title: '2020 Brazil',
@@ -34,7 +34,7 @@ const content = [
   {
     title: '2002 South America',
     content: [
-      'Once they would turn 10 years old, my grandpa and nana would take their grandchildren on an international trip. I was ecstatic to learn that they wanted to take me to Ecuador, Peru, and the Galapagos Islands.'
+      'My grandpa and nana would take their grandchildren on an international trip once they turned 10. They even discussed the idea of exploring Antarctica but I was ecstatic to learn that they wanted to take me to Ecuador, Peru, and the Galapagos Islands.'
     ]
   },
   {

@@ -37,12 +37,10 @@ function Home() {
             href={'/' + thing}
           >
             {thing === 'happyplace' ? (
-              <a
-                href='/hobbies'
-                aria-label='sunshine lollipops and rainbows'
-                className='big-love'
-              >
-                🌈✨
+              <a href='/hobbies' className='big-love'>
+                <span role='img' aria-label='sunshine lollipops and rainbows'>
+                  🌈✨
+                </span>
               </a>
             ) : (
               thing.toUpperCase()

@@ -6,15 +6,15 @@ import Adrienne from './pages/Adrienne';
 import Home from './pages/Home';
 import Hobbies from './pages/Hobbies';
 import Services from './pages/Services';
-import Dancing from './pages/Dancing';
-import DJing from './pages/DJing';
-import Light from './pages/Light';
-import Travel from './pages/Travel';
-import Nature from './pages/Nature';
-import Sax from './pages/Sax';
+import Dancing from './pages/hobbies/Dancing';
+import DJing from './pages/hobbies/DJing';
+import Light from './pages/hobbies/Light';
+import Travel from './pages/hobbies/Travel';
+import Nature from './pages/hobbies/Nature';
+import Sax from './pages/hobbies/Sax';
 import Waves from './components/Waves';
-import Thrifting from './pages/Thrifting';
-import Coding from './pages/Coding';
+import Thrifting from './pages/hobbies/Thrifting';
+import Coding from './pages/hobbies/Coding';
 import YouTube from './pages/YouTube';
 
 function App() {

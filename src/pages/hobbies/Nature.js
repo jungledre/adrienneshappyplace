@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import Plants from './Plants';
-import Content from '../components/Content';
+import Content from '../../components/Content';
 
 const content = [
   {

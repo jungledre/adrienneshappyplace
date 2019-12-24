@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import Content from '../components/Content';
+import Content from '../../components/Content';
 
 function Dancing() {
   return (

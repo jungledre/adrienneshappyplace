@@ -27,7 +27,7 @@ class Accordion extends Component {
 
   render() {
     return this.props.content.map((item, i) => (
-      <div key={i} onClick={this.handleToggle}>
+      <div className='pointer-finger' key={i} onClick={this.handleToggle}>
         <h3>
           <b>+</b> {item.title}
         </h3>

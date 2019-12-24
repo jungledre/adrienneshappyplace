@@ -19,14 +19,17 @@ const content = [
   {
     title: 'Saxophone',
     content: [
-      'I perform and record professional improvised or arranged wind instrument parts. I can read music and learn very fast by ear. I can also play a wide range of auxillary percussion.',
+      'I perform and record professional improvised or arranged wind instrument parts. I read music fluently and learn very fast by ear. I also play a wide range of auxillary percussion.',
       <p>
         Bands:{' '}
         <a href='https://housekeysband.bandcamp.com/Housekeys'>Housekeys</a>,{' '}
         <a href='http://sundaecrush.com/'>Sundae Crush</a>,{' '}
+        <a href='https://soundcloud.com/neonpolygon/strawberry-moon'>The Dahlias</a>,{' '}
         <a href='http://riseupactionband.com/'>Rise Up! Action Band</a>,{' '}
-        <a href='https://halfshellrecords.bandcamp.com/album/softly-wait'>Pleasures</a>,{' '}
-        <a href='https://youtu.be/J-oxfReveQ8'>Tres Leches</a>,{' and '}
+        <a href='https://halfshellrecords.bandcamp.com/album/softly-wait'>
+          Pleasures
+        </a>
+        , <a href='https://youtu.be/J-oxfReveQ8'>Tres Leches</a>,{' and '}
         <a href='https://www.facebook.com/FilthyFemcorps/'>Filthy FemCorps</a>
       </p>
     ]
@@ -48,7 +51,7 @@ const content = [
   {
     title: 'Networking',
     content: [
-      'I can connect you with some of the best musicians, music composers, sound designers, mixing and mastering engineers, photographers, videographers, event producers, social media managers, graphic designers, illustrators, painters, woodworkers and jewelry makers in this city.'
+      'I can connect you with some of the best musicians, music composers, sound designers, mixing and mastering engineers, photographers, videographers, event producers, social media managers, graphic designers, illustrators, painters, tattoo artists, woodworkers and jewelry makers in this city.'
     ]
   }
 ];
@@ -57,8 +60,9 @@ function Services({ label }) {
   return (
     <Fragment>
       <Accordion content={content} />
-      <br/>
-      Contact for rates: <a href='mailto: adrie.k@gmail.com'>adrie.k@gmail.com</a>
+      <br />
+      Let's work together! {' '}
+      <a href='mailto: adrie.k@gmail.com'>adrie.k@gmail.com</a>
     </Fragment>
   );
 }

@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import Content from '../components/Content';
+import Content from '../../components/Content';
 
 const content = [
   {
@@ -9,6 +9,7 @@ const content = [
         <img
           alt='album cover with beautiful rainbow'
           src='https://f4.bcbits.com/img/a2733115006_10.jpg'
+          height='100'
           width='100'
         ></img>
       </a>

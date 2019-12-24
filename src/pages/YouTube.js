@@ -7,7 +7,7 @@ function YouTube({ videoUrl }) {
       <div className='video-background'>
         <div className='video-foreground'>
           <iframe
-            title='YouTube Content'
+            title='psychedelic video'
             src={videoUrl}
             frameBorder='0'
             allowFullScreen

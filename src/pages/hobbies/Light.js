@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
-import Content from '../components/Content';
-import Moires from './Moires';
+import Content from '../../components/Content';
+import Moires from '../Moires';
 const info = [
   {
     title: 'Supplies',
