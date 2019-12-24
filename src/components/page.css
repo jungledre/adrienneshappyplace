@@ -20,7 +20,7 @@
 
 nav {
   display: flex;
-  position: fixed;
+  position: absolute;
   top: 0vh;
   padding: 30px;
 }

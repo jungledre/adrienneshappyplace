@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://localhost:3000/services -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="🌈✨">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Adrienne's Happy Place</title>
+  <style>@keyframes triangle-animation{
+    0%{
+        transform: scale(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    100%{
+        transform: scale(50) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.container2 {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  /* left: 5px; */
+  top: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  background: repeating-radial-gradient(black, black 5px, transparent 5px, transparent 10px);
+}
+
+.element {
+  width: 100vw;
+  height: 100vh;
+  background:
+    radial-gradient(
+      farthest-side at bottom left,
+      rgba(255, 0, 255, 0.5),
+      transparent 3000px
+    ),
+    radial-gradient(
+      farthest-corner at bottom right,
+      rgba(255, 50, 50, 0.5),
+      transparent 300px
+    );
+}
+
+.cool {
+  z-index: 2;
+  opacity: 1;
+  background: none;
+  position: absolute;
+  top: 0;
+  zoom: 200%;
+}
+
+@keyframes colorRotate {
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+  }
+}
+
+/* section, div {
+	width: 100vw;
+	height: 100vh;
+}
+
+div {
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(125,185,232,0) 0%, rgba(124,183,230,0) 1%, rgba(0,0,0,1) 100%);
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(125,185,232,0) 0%,rgba(124,183,230,0) 1%,rgba(0,0,0,1) 100%);
+	background: radial-gradient(ellipse at center,  rgba(125,185,232,0) 0%,rgba(124,183,230,0) 1%,rgba(0,0,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#000000',GradientType=1 );
+} */
+</style><style>body {
+  background-color: #F3FAF1;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-family: 'Vollkorn', 'Concert One', serif;
+}
+
+h1 {
+  margin-top: 0;
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.half-screen {
+  height: 100vh;
+  width: 50vw;
+}
+
+.x3 {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: calc(33.3333%);
+  height: 33.3333vh;
+  width: 33.3333vh;
+}
+
+.x2 {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: calc(50%);
+  height: 50vh;
+  width: 50vw;
+  overflow: hidden;
+}
+</style><style>* { box-sizing: border-box; }
+.video-background {
+  background: transparent;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99; /* Safari, Chrome and Opera > 12.1 */ /* Firefox < 16 */ /* Internet Explorer */ /* Opera < 12.1 */
+  animation: fadein 30s;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  filter:opacity(35%);
+  z-index: -99;
+}
+#vidtop-content {
+	top: 0;
+  color:transparent;
+  z-index: -99;
+
+}
+
+@media only screen and (max-width: 768px) {
+  iframe {
+    display: hidden;
+  }
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+
+/* Safari, Chrome and Opera > 12.1 */
+
+/* Internet Explorer */
+
+/* Opera < 12.1 */
+</style><style>.rainbow-container {
+  margin: 0;
+  padding: 0;
+  background-color: teal;
+  animation: colorRotate 10s linear infinite;
+  min-height: 100vh;
+}
+
+.page-container {
+  height: 100%;
+  max-width: 1000px;
+  padding: 10%;
+}
+
+@media only screen and (max-width: 768px) {
+  .page-container {
+    padding-top: 90px;
+  }
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  top: 0vh;
+  padding: 30px;
+}
+
+nav > a {
+  animation: colorRotate 10s linear infinite;
+  color: Aquamarine;
+  display: block;
+  justify-content: space-between;
+  font-size: 2em;
+  padding-left: 8px;
+  text-decoration: none;
+  margin-right: .5em;
+}
+
+nav > a:visited {
+  color: LimeGreen;
+  animation: colorRotate 10s linear infinite;
+}
+</style><style>.home > .x3 {
+  cursor: pointer;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  font-weight: bold;
+  font-size: 1.3em;
+  letter-spacing: .1em;
+}
+
+.home .half-screen {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: colorRotate 10s linear infinite;
+  min-height: 100vh;
+}
+
+.half-screen a { /* Safari, Chrome and Opera > 12.1 */ /* Firefox < 16 */ /* Internet Explorer */ /* Opera < 12.1 */
+  animation: fadein 3s;
+}
+
+.rainbow {
+  color: hotpink;
+  animation: colorRotate 20s linear infinite;
+  text-align: center;
+  vertical-align: center;
+}
+
+.home a {
+  text-decoration: none;
+  color: black;
+}
+
+.rainbow-link {
+  color: lavender;
+  animation: colorRotate 20s linear infinite;
+}
+
+a {
+ color: slateblue;
+}
+
+.home-link {
+  color: lavender;
+}
+
+.home-link:after {
+  color: orange;
+}
+
+.home-link:link {
+  color: lavender;
+}
+
+.home-link:visited {
+  color: lightBlue;
+}
+
+.home-link:hover {
+  color: peachpuff;
+}
+
+.home-link:active {
+  color: lilac;
+}
+
+.big-love {
+  font-size: 4em;
+}
+
+@media only screen and (max-width: 768px) {
+  .home a:nth-child(5) {
+    display: none;
+  }
+  .home a:nth-child(5) {
+    display: none;
+  }
+  .home > .x3 {
+    min-width: 50%;
+  }
+}
+</style><style>.content-container {
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+
+.content-container > ul {
+  list-style-type: none;
+}
+
+.content-container > ul > li {
+  padding-bottom: .5em;
+}</style><style>.moire {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background: repeating-radial-gradient(limegreen, red 5px, blue 5px, blue 10px);
+}
+
+.moires {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background: repeating-radial-gradient(limegreen, red 5px, blue 5px, blue 10px);
+}
+
+.moire {
+  margin: 0 auto;
+  transform-origin: center center;
+  background: repeating-linear-gradient(45deg, transparent 0px, transparent 1px, limegreen 3px, hotpink 4px);
+  position: relative;
+  height: 300vmax;
+  width: 300vmax;
+  mix-blend-mode: luminosity;
+  top: -100vmax;
+  left: -100vmax;
+  right: 0;
+  bottom: 0;
+  zoom: 200%;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.moire.m1 {
+  animation: spin 25s infinite linear;
+}
+
+.moire.m2 {
+  animation: spin 150s infinite linear;
+}
+
+/* background: repeating-radial-gradient(#e66465, #9198e5 20%); */
+/* background: repeating-radial-gradient(black, black 5px, white 5px, white 10px); */
+
+/* background: radial-gradient(limegreen, hotpink); */
+</style><style>.starburst {
+  /* GLOBAL */
+  width: 100%;
+  height: 100%;
+	position: relative;
+	background-repeat: no-repeat;
+	z-index: 0;
+}
+.starburst * {
+	/* CHILDREN */
+	position: relative;
+	z-index: 1;
+}
+.starburst--both {
+	/* ALIGNMENT BOTH */
+	overflow: hidden;
+	background-image:
+	linear-gradient(0deg, transparent 50%, black 50%),
+	linear-gradient(11deg, transparent 50%, #2897e6 50%),
+	linear-gradient(22deg, transparent 50%, black 50%),
+	linear-gradient(33deg, transparent 50%, #2897e6 50%),
+	linear-gradient(44deg, transparent 50%, black 50%),
+	linear-gradient(55deg, transparent 50%, #2897e6 50%),
+	linear-gradient(66deg, transparent 50%, black 50%),
+	linear-gradient(77deg, transparent 50%, #2897e6 50%),
+	linear-gradient(88deg, transparent 50%, black 50%),
+	linear-gradient(99deg, transparent 50%, #2897e6 50%),
+	linear-gradient(110deg, transparent 50%, black 50%),
+	linear-gradient(121deg, transparent 50%, #2897e6 50%),
+	linear-gradient(132deg, transparent 50%, black 50%),
+	linear-gradient(143deg, transparent 50%, #2897e6 50%),
+	linear-gradient(154deg, transparent 50%, black 50%),
+	linear-gradient(165deg, transparent 50%, #2897e6 50%),
+	linear-gradient(176deg, transparent 50%, black 50%),
+	linear-gradient(187deg, transparent 50%, #2897e6 50%),
+	linear-gradient(198deg, transparent 50%, black 50%),
+	linear-gradient(209deg, transparent 50%, #2897e6 50%),
+	linear-gradient(220deg, transparent 50%, black 50%),
+	linear-gradient(231deg, transparent 50%, #2897e6 50%),
+	linear-gradient(242deg, transparent 50%, black 50%),
+	linear-gradient(253deg, transparent 50%, #2897e6 50%),
+	linear-gradient(264deg, transparent 50%, black 50%),
+	linear-gradient(275deg, transparent 50%, #2897e6 50%),
+	linear-gradient(286deg, transparent 50%, black 50%),
+	linear-gradient(297deg, transparent 50%, #2897e6 50%),
+	linear-gradient(308deg, transparent 50%, black 50%),
+	linear-gradient(319deg, transparent 50%, #2897e6 50%),
+	linear-gradient(330deg, transparent 50%, black 50%),
+	linear-gradient(341deg, transparent 50%, #2897e6 50%),
+	linear-gradient(352deg, transparent 50%, black 50%);
+}
+.starburst--both::before {
+	background-image:
+	linear-gradient(180deg, transparent 50%, black 50%),
+	linear-gradient(191deg, transparent 50%, #2897e6 50%),
+	linear-gradient(202deg, transparent 50%, black 50%),
+	linear-gradient(213deg, transparent 50%, #2897e6 50%),
+	linear-gradient(224deg, transparent 50%, black 50%),
+	linear-gradient(235deg, transparent 50%, #2897e6 50%),
+	linear-gradient(246deg, transparent 50%, black 50%),
+	linear-gradient(257deg, transparent 50%, #2897e6 50%),
+	linear-gradient(268deg, transparent 50%, black 50%),
+	linear-gradient(279deg, transparent 50%, #2897e6 50%),
+	linear-gradient(290deg, transparent 50%, black 50%),
+	linear-gradient(301deg, transparent 50%, #2897e6 50%),
+	linear-gradient(312deg, transparent 50%, black 50%),
+	linear-gradient(323deg, transparent 50%, #2897e6 50%),
+	linear-gradient(334deg, transparent 50%, black 50%),
+	linear-gradient(345deg, transparent 50%, #2897e6 50%),
+	linear-gradient(356deg, transparent 50%, black 50%);
+}
+.starburst--both::after {
+	top: 50% !important;
+	background-position: 0 100%;
+	background-size: 100% 200%;
+	background-image:
+	linear-gradient(0deg, transparent 50%, black 50%),
+	linear-gradient(11deg, transparent 50%, #2897e6 50%),
+	linear-gradient(22deg, transparent 50%, black 50%),
+	linear-gradient(33deg, transparent 50%, #2897e6 50%),
+	linear-gradient(44deg, transparent 50%, black 50%),
+	linear-gradient(55deg, transparent 50%, #2897e6 50%),
+	linear-gradient(66deg, transparent 50%, black 50%),
+	linear-gradient(77deg, transparent 50%, #2897e6 50%),
+	linear-gradient(88deg, transparent 50%, black 50%),
+	linear-gradient(99deg, transparent 50%, #2897e6 50%),
+	linear-gradient(110deg, transparent 50%, black 50%),
+	linear-gradient(121deg, transparent 50%, #2897e6 50%),
+	linear-gradient(132deg, transparent 50%, black 50%),
+	linear-gradient(143deg, transparent 50%, #2897e6 50%),
+	linear-gradient(154deg, transparent 50%, black 50%),
+	linear-gradient(165deg, transparent 50%, #2897e6 50%),
+	linear-gradient(176deg, transparent 50%, black 50%);
+}
+.starburst--both::before,
+.starburst--both::after {
+	top: 0;
+	left: 0;
+	content: "";
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}</style><style></style></head>
+  <body>
+    <noscript>Your browser is kinda fucked. You're gonna need to enable JavaScript to run this fun house.</noscript>
+    <div id="root"><div><div><div class="video-background"><div class="video-foreground"><iframe title="YouTube Content" src="./Adrienne&#39;s Happy Place_files/o-cHr7Ka-fE.html" frameborder="0"></iframe></div></div></div><div class="page-container"><h1>Services</h1><div><h3><b>+</b> DJ Services</h3></div><div><h3><b>+</b> VJ Services</h3></div><div><h3><b>+</b> Saxophone</h3></div><div><h3><b>+</b> Web Development</h3></div><div><h3><b>+</b> Networking</h3></div><br>Contact for rates: <a href="mailto:%20adrie.k@gmail.com">adrie.k@gmail.com</a></div><nav><a href="http://localhost:3000/">🏡</a><a href="http://localhost:3000/%F0%9F%99%8B%F0%9F%8F%BB">🙋🏻</a></nav></div></div>
+
+    <link href="./Adrienne&#39;s Happy Place_files/css" rel="stylesheet">
+    <link href="./Adrienne&#39;s Happy Place_files/css(1)" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="./Adrienne&#39;s Happy Place_files/js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-154914317-1');
+    </script>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="./Adrienne&#39;s Happy Place_files/bundle.js"></script><script src="./Adrienne&#39;s Happy Place_files/0.chunk.js"></script><script src="./Adrienne&#39;s Happy Place_files/main.chunk.js"></script><script src="./Adrienne&#39;s Happy Place_files/main.0ecca285befd5d37d18a.hot-update.js"></script>
+
+<iframe style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; border: none; z-index: 2147483647;" src="./Adrienne&#39;s Happy Place_files/saved_resource.html"></iframe></body></html>

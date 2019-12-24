@@ -18,7 +18,7 @@ function Page({ title, children, noRainbow }) {
 
   return (
     <div
-      className={!noRainbow && 'rainbow-container'}
+      className={!noRainbow ? 'rainbow-container' : null}
       style={{
         backgroundColor: !noRainbow && '#' + randomColor
       }}
@@ -37,6 +37,8 @@ function Page({ title, children, noRainbow }) {
       <nav>
         <Link to='/'>🏡</Link>
         <Link to='/🙋🏻'>🙋🏻</Link>
+        <Link to='/services'>💼</Link>
+        <Link to='/hobbies'>🌈✨</Link>
       </nav>
     </div>
   );

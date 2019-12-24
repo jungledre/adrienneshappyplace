@@ -18,8 +18,6 @@ import Coding from './pages/Coding';
 import YouTube from './pages/YouTube';
 
 function App() {
-
-
   return (
     <Router>
       <Switch>

@@ -1,16 +1,16 @@
 import React, { Fragment } from 'react';
-import Content from '../components/Content';
+import Accordion from '../components/Accordion';
 
 const content = [
   {
-    title: 'DJ',
+    title: 'DJ Services',
     content: [
       'I love spinning electronica, synth pop, Brazilian, house, soul, and funk.',
       "Past Events: Fremont Foundry, Jupiter Bar, Corvus, Linda's Tavern."
     ]
   },
   {
-    title: 'VJ',
+    title: 'VJ Services',
     content: [
       'As my newest service, I can provide a full psychedelic light show including analog liquid light art.',
       'Upcoming Events: Werewolf Vacation 1/18'
@@ -56,8 +56,9 @@ const content = [
 function Services({ label }) {
   return (
     <Fragment>
-      <Content content={content} />
-      Contact: <a href='mailto: adrie.k@gmail.com'>adrie.k@gmail.com</a>
+      <Accordion content={content} />
+      <br/>
+      Contact for rates: <a href='mailto: adrie.k@gmail.com'>adrie.k@gmail.com</a>
     </Fragment>
   );
 }

@@ -4,13 +4,13 @@ import './youtube.css';
 function YouTube({ videoUrl }) {
   return (
     <div>
-      <div class='video-background'>
-        <div class='video-foreground'>
+      <div className='video-background'>
+        <div className='video-foreground'>
           <iframe
             title='YouTube Content'
-            src={ videoUrl }
-            frameborder='0'
-            allowfullscreen
+            src={videoUrl}
+            frameBorder='0'
+            allowFullScreen
           ></iframe>
         </div>
       </div>
