@@ -6,7 +6,7 @@ const favoriteThings = [
   'djing',
   'light',
   'thrifting',
-  'saxophone',
+  'sax',
   'happyplace',
   'travel',
   'coding',
@@ -28,7 +28,7 @@ const rainbow = [
 
 function Home() {
   return (
-    <div className='home rainbow flex-wrap'>
+    <div id='home' className='home rainbow flex-wrap'>
       {favoriteThings.map((thing, i) => {
         return (
           <a
@@ -38,7 +38,7 @@ function Home() {
           >
             {thing === 'happyplace' ? (
               <a
-                href='https://youtu.be/xfr64zoBTAQ'
+                href='/hobbies'
                 aria-label='sunshine lollipops and rainbows'
                 className='big-love'
               >

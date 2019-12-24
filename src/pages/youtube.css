@@ -27,6 +27,13 @@
   z-index: -99;
 
 }
+
+@media only screen and (max-width: 768px) {
+  iframe {
+    display: hidden;
+  }
+}
+
 @media (min-aspect-ratio: 16/9) {
   .video-foreground { height: 300%; top: -100%; }
 }

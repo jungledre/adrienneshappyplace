@@ -64,7 +64,7 @@ function App() {
             <Nature />
           </Page>
         </Route>
-        <Route path='/saxophone'>
+        <Route path='/sax'>
           <Page title={'Saxophone'}>
             <Sax />
           </Page>

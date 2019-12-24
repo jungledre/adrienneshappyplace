@@ -73,3 +73,15 @@ a {
 .big-love {
   font-size: 4em;
 }
+
+@media only screen and (max-width: 768px) {
+  .home a:nth-child(5) {
+    display: none;
+  }
+  .home a:nth-child(5) {
+    display: none;
+  }
+  .home > .x3 {
+    min-width: 50%;
+  }
+}
