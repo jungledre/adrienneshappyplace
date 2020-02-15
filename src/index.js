@@ -3,11 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import Snow from 'react-snow-effect';
 
 ReactDOM.render(
   <Fragment>
-        <Snow />
         <App />
   </Fragment>
 , document.getElementById('root')
