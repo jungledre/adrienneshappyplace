@@ -13,24 +13,41 @@ const content = [
     title: 'VJ Services',
     content: [
       'As my newest service, I can provide a full psychedelic light show including analog liquid light art.',
-      'Upcoming Events: Werewolf Vacation 1/18'
+      <p>See: <a href='http://instagram.com/spectral.nectar'>Spectral Nectar</a></p>
     ]
   },
   {
     title: 'Saxophone',
     content: [
-      'I perform and record professional improvised or arranged wind instrument parts. I read music fluently and learn very fast by ear. I also play a wide range of auxillary percussion.',
+      'I professionally perform and record improvised or arranged wind instrument parts. I read music fluently and learn very fast by ear. I also play a wide range of auxillary percussion.',
+      <p>Audio Recordings:</p>,
+      <a href='https://halfshellrecords.bandcamp.com/album/softly-wait'>
+        <img
+          alt='album cover with beautiful rainbow'
+          src='https://f4.bcbits.com/img/a2733115006_10.jpg'
+          height='100'
+          width='100'
+        ></img>
+      </a>,
+      <p>
+        Live Recordings:{' '}
+        <a href='https://youtu.be/J-oxfReveQ8'>Tres Leches 2019</a>
+        {', '}
+        <a href='https://www.youtube.com/watch?v=00OoYjwBF0g'>Pleasures 2018</a>
+      </p>,
       <p>
         Bands:{' '}
         <a href='https://housekeysband.bandcamp.com/Housekeys'>Housekeys</a>,{' '}
         <a href='http://sundaecrush.com/'>Sundae Crush</a>,{' '}
-        <a href='https://soundcloud.com/neonpolygon/strawberry-moon'>The Dahlias</a>,{' '}
-        <a href='http://riseupactionband.com/'>Rise Up! Action Band</a>,{' '}
+        <a href='https://soundcloud.com/neonpolygon/strawberry-moon'>
+          The Dahlias
+        </a>
+        , <a href='http://riseupactionband.com/'>Rise Up! Action Band</a>,{' '}
         <a href='https://halfshellrecords.bandcamp.com/album/softly-wait'>
           Pleasures
         </a>
         , <a href='https://youtu.be/J-oxfReveQ8'>Tres Leches</a>,{' and '}
-        <a href='https://www.facebook.com/FilthyFemcorps/'>Filthy FemCorps</a>
+        <a href='https://www.facebook.com/FilthyFemcorps/'>Filthy FemCorps</a>,
       </p>
     ]
   },
@@ -61,7 +78,7 @@ function Services({ label }) {
     <Fragment>
       <Accordion content={content} />
       <br />
-      Let's work together! {' '}
+      Let's work together!{' '}
       <a href='mailto: adrie.k@gmail.com'>adrie.k@gmail.com</a>
     </Fragment>
   );
